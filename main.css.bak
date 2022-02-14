@@ -78,6 +78,7 @@ body {
 
 .squares li {
   background-color: #ebedf0;
+  list-style:none;
 }
 
 .squares li[data-level="1"] {
