@@ -23,7 +23,8 @@ body {
 		"days squares";
 	grid-gap:10px;
 	grid-template-columns: auto 1fr;
-						
+	
+	margin-left: 20px;
 }
 
 
@@ -63,12 +64,32 @@ body {
 	grid-gap:var(--square-gap);
 }
 
+.days li:nth-child(odd) {
+  visibility: hidden;
+}
+
 .squares{
 	background:pink;
 	grid-area:squares;
 	
 	grid-auto-flow:column;
 	grid-auto-columns:var(--square-size);
+}
+
+.squares li {
+  background-color: #ebedf0;
+}
+
+.squares li[data-level="1"] {
+  background-color: #c6e48b;
+}
+
+.squares li[data-level="2"] {
+  background-color: #7bc96f;
+}
+
+.squares li[data-level="3"] {
+  background-color: #196127;
 }
 
 .days,

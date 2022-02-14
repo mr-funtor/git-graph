@@ -35,7 +35,10 @@
 			<li>Sat</li>
 		
 		</ul>
-		<ul class="squares"></ul>
+		
+		<ul class="squares">
+		
+		</ul>
 	
 	</div>
 
