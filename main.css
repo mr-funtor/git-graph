@@ -4,6 +4,17 @@
 	--week-width:calc(var(--square-size) + var(--square-gap));
 }
 
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 12px;
+}
+
 .graph{
 	background:lightgrey;
 	display: inline-grid;
@@ -12,12 +23,13 @@
 		"days squares";
 	grid-gap:10px;
 	grid-template-columns: auto 1fr;
-						
+	
+	margin-left: 20px;
 }
 
 
 .months{
-	background:blue;
+	/* background:blue; */
 	height:100%;
 	width:100%;
 	grid-area:months;
@@ -38,8 +50,14 @@
 	z-index:5;
 }
 
+.months li,
+.days li{
+	list-style:none;
+	
+}
+
 .days{
-	background:coral;
+	/* background:coral; */
 	grid-area:days;
 	display:grid;
 	grid-template-rows: repeat(7,var(--square-size));
